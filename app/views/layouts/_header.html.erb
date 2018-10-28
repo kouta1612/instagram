@@ -1,0 +1,18 @@
+<header>
+  <%= link_to 'instagram', '#' %>
+  <nav>
+    <div>
+      <%= form_tag("/search", method: "get") %>
+        <%= text_field_tag("#") %>
+        <%= submit_tag("検索") %>
+      <% end %>
+    </div>
+    <div>
+      <%= check_box_tag(:notification) %>
+      <%= label_tag(:notification, "通知") %>
+    </div>
+    <div>
+      <%= link_to 'マイページ', '#' %>
+    </div>
+  </nav>
+</header>
