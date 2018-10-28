@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.4'
 gem 'bcrypt',       '3.1.12'
+gem 'carrierwave',  '1.2.2'
 gem 'omniauth-facebook'
 
 group :development, :test do

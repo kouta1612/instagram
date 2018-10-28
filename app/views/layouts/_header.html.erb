@@ -2,7 +2,7 @@
   <%= link_to 'instagram', '#' %>
   <nav>
     <div>
-      <%= form_tag("/search", method: "get") %>
+      <%= form_tag("/search", method: "get") do %>
         <%= text_field_tag("#") %>
         <%= submit_tag("検索") %>
       <% end %>
