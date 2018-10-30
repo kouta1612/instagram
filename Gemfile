@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.6'
+gem 'bcrypt',       '3.1.12'
+gem 'bootstrap-sass', '3.3.7'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
@@ -8,9 +10,6 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.4'
-gem 'bcrypt',       '3.1.12'
-gem 'carrierwave',  '1.2.2'
-gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'sqlite3',      '1.3.13'
