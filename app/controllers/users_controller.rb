@@ -23,13 +23,25 @@ class UsersController < ApplicationController
   end
 
   def update
-    
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      flash[:success] = 'プロフィールを更新しました。'
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @user = User.find(params[:id]).destroy
+    flash[:success] = 'ユーザを削除しました。'
+    redirect_to root_path
   end
 
   private
 
     def user_params
       params.require(:user).permit(:full_name, :user_name, :email, :password,
-        :password_confirmation)
+        :password_confirmation, :web_site, :self_introduction, :sex)
     end
 end
