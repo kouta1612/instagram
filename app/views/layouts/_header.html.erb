@@ -9,8 +9,8 @@
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
               </form>
             </li>
-            <li><%= link_to 'Profile', '' %></li>
-            <li><%= link_to 'Setting', '' %></li>
+            <li><%= link_to 'Profile', user_path(current_user) %></li>
+            <li><%= link_to 'Setting', edit_user_path(current_user) %></li>
             <li><%= link_to 'Logout', logout_path, method: :delete %></li>
           <% else %>
             <li><%= link_to 'Login', login_path %></li>
