@@ -25,7 +25,7 @@
       <%= f.submit '更新' %>
     <% end %>
 
-    <%= link_to 'パスワード変更', '' %>
+    <%= link_to 'パスワード変更', edit_password_path(@user) %>
     <%= link_to 'アカウント削除', user_path(@user), method: :delete,
                   data: { confirm: '本当に削除してよろしいですか？' } %>
   </div>
