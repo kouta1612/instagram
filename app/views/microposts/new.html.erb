@@ -1,0 +1,7 @@
+<%= form_for(@micropost) do |f| %>
+
+  <%= f.file_field :picture, accept: 'image/jpeg, image/png' %>
+
+  <%= f.submit "アップロード", class: "btn btn-primary" %>
+
+<% end %>

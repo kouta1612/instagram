@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class MicropostsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get new" do
+    get microposts_new_url
+    assert_response :success
+  end
+
 end
