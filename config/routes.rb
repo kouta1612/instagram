@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   resources :users
   resources :photos, only: [:new, :create]
   resources :passwords, only: [:edit, :update]
-  resources :microposts, only: [:new, :create, :delete]
+  resources :microposts, only: [:show, :new, :create, :delete]
 end

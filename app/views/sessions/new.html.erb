@@ -1,13 +1,18 @@
-<%= form_for(:session, url: login_path) do |f| %>
+<div class="row">
+  <div class="col">
+    <%= form_for(:session, url: login_path) do |f| %>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+      <%= f.label :email, 'メールアドレス' %>
+      <%= f.email_field :email, class: 'form-control' %>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+      <%= f.label :password, 'パスワード' %>
+      <%= f.password_field :password, class: 'form-control' %>
 
-  <%= f.submit "Log in" %>
+      <%= f.submit "Log in" %>
 
-  <p>アカウントをお持ちでないですか？ <%= link_to "登録する", signup_path %></p>
-  
-<% end %>
+      <p>アカウントをお持ちでないですか？ <%= link_to "登録する", signup_path %></p>
+      
+    <% end %>
+  </div>
+</div>
+
