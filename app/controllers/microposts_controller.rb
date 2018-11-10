@@ -1,7 +1,7 @@
 class MicropostsController < ApplicationController
 
   def show
-    @micoposts = current_user.microposts
+    @microposts = current_user.microposts
   end
 
   def new
@@ -14,6 +14,7 @@ class MicropostsController < ApplicationController
       flash[:success] = 'アップロードに成功しました。'
       redirect_to micropost_path(@micropost)
     else 
+      flash[:danger] = 'アップロードに失敗しました。'
       render 'new'
     end
   end
