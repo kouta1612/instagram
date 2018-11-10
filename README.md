@@ -1,24 +1,29 @@
-# README
+#実装したこと
+・ユーザ登録・編集・削除機能
+・ログイン・ログアウト機能
+・写真アップロード機能
+・パスワード変更機能
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#実装できなかったこと
+・コメント機能
+・写真検索機能
+・お気に入り機能
+・ユーザフォロー機能
+・Facebookログイン機能
 
-Things you may want to cover:
+#苦労した点
+・deviceのgemを使わずに実装した。
+・最初に何に手をつけていけば良いのかが分からなかった。
+・実装しようとして結局実装できないで終わった機能が多かった。
+・Railsチュートリアルを完走しても、いざ自分でアプリを作るとなるとなかなか進まなくて苦労した。
 
-* Ruby version
+#反省点
+・最初の一週間は時間を作って作業できていたが、残りの一週間は少ししか作業できなかった。
+・気持ちに余裕がなかったので、テストを書くことができなかった。
+・家で作業しようとすると作業進まなかった。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#今後するべきこと
+・今回実装できなかった機能を実装する。
+・gemのdeviceを利用する。
+・Rspecのテストを書く。
+・外で作業する。

@@ -6,7 +6,7 @@ class PasswordsController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.password === params[:user][:now_password]
+    if @user.authenticate(params[:user][:now_password])
       if @user.update_attributes(user_params)
         flash[:success] = 'パスワードの更新に成功しました。'
         redirect_to @user
@@ -14,6 +14,7 @@ class PasswordsController < ApplicationController
         render 'edit'
       end
     else
+      debugger
       @user.errors.add(:password, '現在のパスワードが違います。')
       render 'edit'
     end
